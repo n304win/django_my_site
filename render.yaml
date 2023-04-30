@@ -2,7 +2,6 @@ databases:
   - name: mysite
     databaseName: mysite
     user: mysite
-    region: frankfurt
     plan: free
 
 services:
