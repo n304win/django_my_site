@@ -1,0 +1,13 @@
+# INSTALLED WITH PIP. CONDA FAILED
+django_plotly_dash==2.1.4
+dash==2.9.3
+numpy==1.24.3
+pandas==2.0.1
+SQLAlchemy==2.0.11
+dash-bootstrap-components==1.4.1
+Django==3.2.18
+psycopg2
+whitenoise
+dpd_static_support
+#dash-ag-grid 0.0.2
+ruff==0.0.263

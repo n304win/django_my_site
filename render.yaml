@@ -13,6 +13,8 @@ services:
     startCommand: "gunicorn mysite.wsgi:application"
     autoDeploy: false
     envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
       - key: DATABASE_NAME
         fromDatabase:
           name: mysite
