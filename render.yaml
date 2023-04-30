@@ -10,7 +10,6 @@ services:
     name: mysite
     env: python
     plan: free
-    region: frankfurt
     buildCommand: "./build.sh"
     startCommand: "gunicorn mysite.wsgi:application"
     autoDeploy: false
