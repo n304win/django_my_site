@@ -3,6 +3,7 @@ databases:
     databaseName: mysite
     user: mysite
     region: frankfurt
+    plan: free
 
 services:
   - type: web
