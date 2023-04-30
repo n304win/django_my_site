@@ -14,7 +14,7 @@ services:
     autoDeploy: false
     envVars:
       - key: PYTHON_VERSION
-        value: 3.10
+        value: 3.10.11
       - key: DATABASE_NAME
         fromDatabase:
           name: mysite
