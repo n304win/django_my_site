@@ -14,10 +14,30 @@ services:
     startCommand: "gunicorn mysite.wsgi:application"
     autoDeploy: false
     envVars:
-      - key: DATABASE_URL
+      - key: DATABASE_NAME
         fromDatabase:
           name: mysite
-          property: connectionString
+          property: database
+      - key: DATABASE_USER
+        fromDatabase:
+          name: mysite
+          property: user
+      - key: DATABASE_PASSWORD
+        fromDatabase:
+          name: mysite
+          property: password
+      - key: DATABASE_PW
+        fromDatabase:
+          name: mysite
+          property: password
+      - key: DATABASE_HOST
+        fromDatabase:
+          name: mysite
+          property: host
+      - key: DATABASE_PORT
+        fromDatabase:
+          name: mysite
+          property: port
       - key: SECRET_KEY
         generateValue: true
       - key: WEB_CONCURRENCY
